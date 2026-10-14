@@ -14,14 +14,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-SET @MYSQLDUMP_TEMP_LOG_BIN = @@SESSION.SQL_LOG_BIN;
-SET @@SESSION.SQL_LOG_BIN= 0;
-
---
--- GTID state at the beginning of the backup 
---
-
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ 'c3d4d9b2-fceb-11f0-8bc6-e94084d7a9c9:1-131';
 
 --
 -- Table structure for table `Books`
@@ -51,7 +43,7 @@ CREATE TABLE `Books` (
 
 LOCK TABLES `Books` WRITE;
 /*!40000 ALTER TABLE `Books` DISABLE KEYS */;
-INSERT INTO `Books` VALUES (1,'Абай жолы','Мұхтар Әуезов','Роман',1942,5,4,'A1','S01'),(2,'Менің атым Қожа','Бердібек Соқпақбаев','Повесть',1957,4,4,'A1','S02'),(3,'Көшпенділер','Ілияс Есенберлин','Тарихи роман',1969,6,6,'A2','S03'),(4,'Қан мен тер','Әбдіжәміл Нұрпейісов','Роман',1961,3,3,'A2','S04'),(5,'Қара сөздер','Абай Құнанбайұлы','Философия',1890,5,4,'A3','S05'),(6,'Python негіздері','Оқу ұжымы','IT',2022,8,7,'B1','S06'),(7,'Деректер қоры','Оқу ұжымы','IT',2023,7,7,'B1','S07'),(8,'Алгоритмдер','Оқу ұжымы','IT',2021,6,5,'B2','S08'),(9,'Жасанды интеллект','Оқу ұжымы','IT',2024,5,5,'B2','S09'),(10,'Веб бағдарламалау','Оқу ұжымы','IT',2023,6,6,'B3','S10'),(11,'Smart Library жаңартылған кітап','Аида Байбосын','IT',2026,3,3,'B1','S11'),(12,'Smart Library тест кітабы','Аида Байбосын','IT',2026,3,3,'B1','S11'),(13,'Smart Library тест кітабы','Аида Байбосын','IT',2026,3,3,'B1','S12');
+INSERT INTO `Books` VALUES (1,'Абай жолы','Мұхтар Әуезов','Роман',1942,5,4,'A1','S01'),(2,'Менің атым Қожа','Бердібек Соқпақбаев','Повесть',1957,4,4,'A1','S02'),(3,'Көшпенділер','Ілияс Есенберлин','Тарихи роман',1969,6,6,'A2','S03'),(4,'Қан мен тер','Әбдіжәміл Нұрпейісов','Роман',1961,3,3,'A2','S04'),(5,'Қара сөздер','Абай Құнанбайұлы','Философия',1890,5,4,'A3','S05'),(6,'Python негіздері','Оқу ұжымы','IT',2022,8,7,'B1','S06'),(7,'Деректер қоры','Оқу ұжымы','IT',2023,7,7,'B1','S07'),(8,'Алгоритмдер','Оқу ұжымы','IT',2021,6,5,'B2','S08'),(9,'Жасанды интеллект','Оқу ұжымы','IT',2024,5,5,'B2','S09'),(10,'Веб бағдарламалау','Оқу ұжымы','IT',2023,6,6,'B3','S10'),(11,'Практикалық тексеру','Аида Байбосын','IT',2026,3,3,'B1','S11'),(12,'Smart Library тест кітабы','Аида Байбосын','IT',2026,3,3,'B1','S11'),(13,'Smart Library тест кітабы','Аида Байбосын','IT',2026,3,3,'B1','S12');
 /*!40000 ALTER TABLE `Books` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -235,7 +227,6 @@ LOCK TABLES `Users` WRITE;
 INSERT INTO `Users` VALUES (1,'Айдана Серік','aidana@example.com','reader'),(2,'Нұржан Әли','nurzhan@example.com','reader'),(3,'Аружан Ермек','aruzhan@example.com','reader'),(4,'Данияр Болат','daniyar@example.com','reader'),(5,'Мадина Асқар','madina@example.com','reader'),(6,'Аида Байбосын','aida.admin@example.com','admin'),(7,'Іңкәр Әділхан','inkar.library@example.com','librarian'),(8,'Ерке Өмірзақ','erke.booking@example.com','booking_staff');
 /*!40000 ALTER TABLE `Users` ENABLE KEYS */;
 UNLOCK TABLES;
-SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -246,4 +237,4 @@ SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-10-14 15:53:34
+-- Dump completed on 2026-10-14 16:12:50
