@@ -29,7 +29,7 @@ try:
         3,
         3,
         "B1",
-        "S11"
+        "S12"
     )
 
     cursor.execute(sql, values)
