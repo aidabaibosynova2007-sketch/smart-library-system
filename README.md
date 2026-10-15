@@ -2,4 +2,3 @@
 Smart Library - Кітапхана ақпараттық жүйесі
 test 
 aida
-eldana
